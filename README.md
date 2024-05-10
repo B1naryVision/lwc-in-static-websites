@@ -1,0 +1,1 @@
+# lwc-in-static-websites
