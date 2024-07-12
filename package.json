@@ -1,0 +1,30 @@
+{
+  "name": "lwc-in-static-websites",
+  "version": "1.0.0",
+  "description": "Sample project to show how Lightning Web Components can be used within static websites",
+  "main": "lwc.js",
+  "author": "B1naryVision",
+  "license": "ISC",
+  "homepage": "https://github.com/B1naryVision/lwc-in-static-websites#readme",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B1naryVision/lwc-in-static-websites.git"
+  },
+  "bugs": {
+    "url": "https://github.com/B1naryVision/lwc-in-static-websites/issues"
+  },
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "devDependencies": {
+    "@lwc/rollup-plugin": "^7.1.0",
+    "@rollup/plugin-replace": "^5.0.7",
+    "lwc": "^7.1.0",
+    "rollup": "^4.18.1"
+  }
+}

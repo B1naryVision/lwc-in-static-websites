@@ -1,0 +1,27 @@
+<template>
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="example-input">
+            Example Input
+        </label>
+        <div class="slds-form-element__control">
+            <input
+                type="text"
+                id="example-input"
+                placeholder={placeholder}
+                class="slds-input"
+                onchange={handleChange}
+                value={inputValue}/>
+        </div>
+    </div>
+    <button class="slds-button slds-button_brand slds-m-top_xx-small" onclick={handleSave}>
+        Save
+    </button>
+
+    <ul class="slds-has-dividers_around-space slds-m-vertical_small">
+        <template for:each={items} for:item="item">
+            <li class="slds-item" key={item.id}>
+                <c-data-example-item item={item} onremove={handleRemoveItem}></c-data-example-item>
+            </li>
+        </template>
+    </ul>
+</template>
